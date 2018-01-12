@@ -1,0 +1,23 @@
+{
+  "name": "jschain",
+  "version": "1.0.0",
+  "description": "A simple blockchain in js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeluisrezende/jschain.git"
+  },
+  "author": "Jorge Luis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgeluisrezende/jschain/issues"
+  },
+  "homepage": "https://github.com/jorgeluisrezende/jschain#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
