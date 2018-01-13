@@ -18,14 +18,14 @@ module.exports.create = (data) => {
   return newblock;
 }
 
-module.exports.validBlock = (newBlock, lastBlock = chain.last()) => {
+module.exports.validateBlock = (newBlock, lastBlock = chain.last()) => {
   let blockIsValid = false;
 
-  if(newBlock.index == lastBlock.index+1) {
+  if (newBlock.index == lastBlock.index+1) {
     blockIsValid = true;
-  }else if(newBlock.prevHash == lastBlock.hash) {
+  } else if (newBlock.prevHash == lastBlock.hash) {
     blockIsValid = true;
-  }else if(newBlock.hash == this.generateHash(newBlock)){
+  } else if (newBlock.hash == this.generateHash(newBlock)) {
     blockIsValid = true
   }
 
