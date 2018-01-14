@@ -1,5 +1,3 @@
-import { validateBlock } from './block';
-
 const block = require('./block');
 
 const Chain = (function() {
@@ -65,7 +63,7 @@ const Chain = (function() {
   return {
     init() {
       if (!instance) {
-        instance.create();
+        instance = create();
       }
 
       return instance;
@@ -73,6 +71,6 @@ const Chain = (function() {
     }
   };
 
-}());
+})();
 
 module.exports = Chain.init();

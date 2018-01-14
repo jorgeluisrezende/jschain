@@ -1,8 +1,8 @@
 const crypto = require('crypto-js');
 const chain = require('./chain');
 
-module.exports.generateHash = ({index, prevHash, timestamp, data}) => {
-  return crypto.SHA256(data + index + prevHash + timestamp).toString();
+module.exports.generateHash = function({index, prevHash, timestamp, data}) {
+  return crypto.SHA256(data + index + prevHash + timestamp).toString();;
 }
 
 module.exports.create = (data) => {
